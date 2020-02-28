@@ -1,36 +1,173 @@
-body, html {
-    margin: 0;
-    font-family: sans-serif;
+
+body {
+  color: #777777;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.5em;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.content {
-    margin: 0 auto;
-    width: 400px;
+
+a, a:focus, a:hover {
+  text-decoration: none;
+  outline: 0;
+  color: #777777;
 }
 
-table, td, th {
-    border: 1px solid #aaa;
+
+
+.text-italic {
+  font-style: italic;
 }
 
-table {
-    border-collapse: collapse;
-    width: 100%;
+.text-white {
+  color: #fff;
 }
 
-th {
-    height: 30px;
+.transition {
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
-td {
-    text-align: center;
-    padding: 5px;
+
+.overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
 }
 
-.form {
-    margin-top: 20px;
+body {
+  position: relative;
 }
 
-#content {
-    width: 70%;
+
+
+nav {
+  margin-right: 70px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  transform-origin: 100% 50%;
+}
+
+/**/
+
+.primary-btn {
+  line-height: 40px;
+  padding: 0 30px;
+  border-radius: 20px;
+  background: transparent;
+  border: 1px solid #fff;
+  color: #222222;
+  display: inline-block;
+  font-weight: 500;
+  position: relative;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.primary-btn:focus {
+  outline: none;
+}
+
+.primary-btn span {
+  color: #fff;
+  position: relative;
+  z-index: 2;
+}
+
+.primary-btn .mr-10 {
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.primary-btn:hover .mr-10 {
+  margin-right: 20px;
+}
+
+.primary-btn.white-bg {
+  background: #fff;
+  border: 1px solid #eee;
+  color: #8460f6;
+}
+
+.primary-btn.white-bg span {
+  color: #8460f6;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.primary-btn.white-bg:hover {
+  background: #8460f6;
+  color: #fff;
+  border: 1px solid transparent;
+}
+
+.primary-btn.white-bg:hover span {
+  color: #fff;
+}
+
+.banner-area {
+  background: url(../img/roi.jpg) no-repeat center center/cover;
+}
+
+.banner-area .overlay-bg {
+  background: rgba(132, 96, 246, 0.8);
+}
+
+@media (max-width: 767px) {
+  .banner-area .fullscreen {
+    height: 600px !important;
+  }
+}
+
+.banner-content h1 {
+  font-size: 60px;
+  font-weight: 100;
+  line-height: 1.2em;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+  .banner-content h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 991px) {
+  .banner-content h1 br {
+    display: none;
+  }
+}
+
+.banner-content p {
+  margin-bottom: 60px;
+  font-size: 16px;
+}
+
+@media (max-width: 991px) {
+  .banner-content p br {
+    display: none;
+  }
+}
+
+.generic-banner {
+  background: #8460f6;
 }
 

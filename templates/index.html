@@ -29,18 +29,31 @@
             <div class="row fullscreen align-items-center justify-content-center">
                 <div class="col-lg-10">
                     <div class="banner-content text-center">
-                        <h1 class="text-white">No Need to find, <br>
-                        This is the place on web</h1>
-                        <p class="text-white">Living in today’s metropolitan world of cellular phones, mobile computers and other high-tech <br> gadgets is not just hectic but very impersonal.</p>
-                        <a href="#" class="primary-btn d-inline-flex align-items-center"><span class="mr-10">Get Started</span><span class="lnr lnr-arrow-right"></span></a>
+                        {% if choice==1 %}
+                            <h1 class="text-white">Live Video Tracking <br>
+                            Let's get started.</h1>
+                            <p class="text-white">Tracking on a live video is challenging sometimes, but at the same time it is pleasing to watch it. <br></p>
+                            <a href="/onspot" class="primary-btn d-inline-flex align-items-center"><span class="mr-10">Go ahead</span><span class="lnr lnr-arrow-right"></span></a>
+                        {% elif choice==2 %}
+                            <h1 class="text-white">Live Video Tracking <br>
+                            Go for the options.</h1>
+                            <p class="text-white">Don't forget to crop and select the object that needs to be tracked. <br>Now, you can watch tracking over 2 different algorithms mean and cam shift.</p>
+                            <a href="/click" class="primary-btn d-inline-flex align-items-center"><span class="mr-10">Crop</span><span class="lnr lnr-arrow-right"></span></a>
+                            <a href="/crop" class="primary-btn d-inline-flex align-items-center"><span class="mr-10">View the object</span><span class="lnr lnr-arrow-right"></span></a>
+                            <a href="/mean" class="primary-btn d-inline-flex align-items-center"><span class="mr-10">Mean shift</span><span class="lnr lnr-arrow-right"></span></a>
+                            <a href="/cam" class="primary-btn d-inline-flex align-items-center"><span class="mr-10">Cam shift</span><span class="lnr lnr-arrow-right"></span></a>
+                        {% endif %}
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <script src="js/vendor/jquery-2.2.4.min.js"></script>
+    <link href="{{ url_for('static', filename='css/linearicons.css') }}">
+    <script src="{{ url_for('static', filename='js/vendor/jquery-2.2.4.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
     <script src="js/main.js"></script>
+
 </body>
 
 {% endblock %}
